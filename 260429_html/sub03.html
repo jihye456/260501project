@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지원 센터</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header" id="site-header">
+        <div class="site-header__inner">
+            <a href="index.html" class="logo">LOGO</a>
+            <nav class="site-header__nav" id="primary-nav" aria-label="주 메뉴">
+                <ul>
+                    <li><a href="sub01.html">회사 소개</a></li>
+                    <li><a href="sub02.html">회사 가이드</a></li>
+                    <li><a href="sub03.html" aria-current="page">지원 센터</a></li>
+                </ul>
+            </nav>
+            <div class="site-header__trailing">
+                <div class="site-header__actions">
+                    <a href="#" class="btn-pill">로그인</a>
+                    <button type="button" class="btn-pill" aria-haspopup="listbox" aria-expanded="false">
+                        KR<span class="caret" aria-hidden="true">▼</span>
+                    </button>
+                </div>
+                <button type="button" class="menu-toggle" id="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="메뉴 열기">
+                    <span class="menu-toggle__bars" aria-hidden="true">
+                        <span class="menu-toggle__bar"></span>
+                        <span class="menu-toggle__bar"></span>
+                        <span class="menu-toggle__bar"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+        <div class="drawer-overlay" id="drawer-overlay" aria-hidden="true"></div>
+    </header>
+    <main>
+        <div class="main-content main-content--support">
+            <div class="main-content__text">
+                <h1 class="main-content__title">지원 센터 — 문의부터 기술 도움말까지</h1>
+                <p class="main-content__desc">
+                    계정·결제·서비스 이용 중 문제가 있으면 FAQ와 1:1 문의를 이용해 주세요.<br>
+                    긴급 장애는 별도 채널로 접수됩니다.
+                </p>
+                <p class="main-content__period">운영 시간 평일 09:00 ~ 18:00 (KST)</p>
+                <div class="main-content__stats" role="group" aria-label="지원 안내">
+                    <span class="main-content__stat">
+                        <span class="main-content__coin main-content__coin--support" aria-hidden="true">?</span>
+                        <span class="main-content__stat-label">FAQ 32건</span>
+                    </span>
+                    <span class="main-content__stat-divider" aria-hidden="true"></span>
+                    <span class="main-content__stat">
+                        <span class="main-content__avatar" aria-hidden="true"></span>
+                        <span class="main-content__stat-label">평균 답변 2시간</span>
+                    </span>
+                </div>
+                <a href="#" class="main-content__cta">1:1 문의하기</a>
+            </div>
+            <div class="main-content__visual" aria-hidden="true">
+                <img
+                    class="main-content__image"
+                    src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+                    srcset="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&amp;fit=crop&amp;w=800&amp;q=80 800w,
+                            https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&amp;fit=crop&amp;w=1200&amp;q=80 1200w"
+                    sizes="(min-width: 900px) 50vw, 100vw"
+                    width="1200"
+                    height="800"
+                    alt=""
+                    loading="lazy"
+                    decoding="async">
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+</html>

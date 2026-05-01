@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회사 소개</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header" id="site-header">
+        <div class="site-header__inner">
+            <a href="index.html" class="logo">LOGO</a>
+            <nav class="site-header__nav" id="primary-nav" aria-label="주 메뉴">
+                <ul>
+                    <li><a href="sub01.html" aria-current="page">회사 소개</a></li>
+                    <li><a href="sub02.html">회사 가이드</a></li>
+                    <li><a href="sub03.html">지원 센터</a></li>
+                </ul>
+            </nav>
+            <div class="site-header__trailing">
+                <div class="site-header__actions">
+                    <a href="#" class="btn-pill">로그인</a>
+                    <button type="button" class="btn-pill" aria-haspopup="listbox" aria-expanded="false">
+                        KR<span class="caret" aria-hidden="true">▼</span>
+                    </button>
+                </div>
+                <button type="button" class="menu-toggle" id="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="메뉴 열기">
+                    <span class="menu-toggle__bars" aria-hidden="true">
+                        <span class="menu-toggle__bar"></span>
+                        <span class="menu-toggle__bar"></span>
+                        <span class="menu-toggle__bar"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+        <div class="drawer-overlay" id="drawer-overlay" aria-hidden="true"></div>
+    </header>
+    <main>
+        <div class="main-content main-content--about">
+            <div class="main-content__text">
+                <h1 class="main-content__title">회사 소개 — 비전과 사람, 함께 성장하는 조직</h1>
+                <p class="main-content__desc">
+                    크리에이터와 팬을 잇는 콘텐츠·기술 역량을 바탕으로<br>
+                    지속 가능한 즐거움과 신뢰를 만들어 가고 있습니다.
+                </p>
+                <p class="main-content__period">기업 공시·IR 자료 기준 2026. 04. 01 (KST)</p>
+                <div class="main-content__stats" role="group" aria-label="회사 개요">
+                    <span class="main-content__stat">
+                        <span class="main-content__coin main-content__coin--about" aria-hidden="true">회</span>
+                        <span class="main-content__stat-label">설립 2012년</span>
+                    </span>
+                    <span class="main-content__stat-divider" aria-hidden="true"></span>
+                    <span class="main-content__stat">
+                        <span class="main-content__avatar" aria-hidden="true"></span>
+                        <span class="main-content__stat-label">글로벌 12개 지사</span>
+                    </span>
+                </div>
+                <a href="#" class="main-content__cta">IR·연혁 자세히 보기</a>
+            </div>
+            <div class="main-content__visual" aria-hidden="true">
+                <img
+                    class="main-content__image"
+                    src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+                    srcset="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&amp;fit=crop&amp;w=800&amp;q=80 800w,
+                            https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&amp;fit=crop&amp;w=1200&amp;q=80 1200w"
+                    sizes="(min-width: 900px) 50vw, 100vw"
+                    width="1200"
+                    height="800"
+                    alt=""
+                    loading="lazy"
+                    decoding="async">
+            </div>
+        </div>
+    </main> 
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+</html>

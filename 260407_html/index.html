@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 60px;
+            padding: 0 40px;
+            background-color: #fff;
+            border-bottom: 1px solid #e0e0e0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* 로고 */
+        .logo {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            color: #000;
+            text-decoration: none;
+            flex-shrink: 0;
+        }
+
+        /* 중앙 GNB */
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 48px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        nav a {
+            font-size: 14px;
+            font-weight: 500;
+            color: #222;
+            text-decoration: none;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+            padding: 4px 0;
+            position: relative;
+        }
+
+        nav a::after {
+            content: '';
+            display: block;
+            height: 1.5px;
+            background-color: #000;
+            width: 0;
+            transition: width 0.25s ease;
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        /* 우측 유틸 */
+        .util {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            flex-shrink: 0;
+        }
+
+        .lang {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 13px;
+            color: #555;
+        }
+
+        .lang a {
+            text-decoration: none;
+            color: #555;
+            letter-spacing: 0.5px;
+            transition: color 0.2s;
+        }
+
+        .lang a:hover,
+        .lang a.active {
+            color: #000;
+            font-weight: 700;
+        }
+
+        .lang-divider {
+            color: #ccc;
+            font-size: 11px;
+        }
+
+        .search-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .search-btn svg {
+            width: 18px;
+            height: 18px;
+            stroke: #333;
+            fill: none;
+            transition: stroke 0.2s;
+        }
+
+        .search-btn:hover svg {
+            stroke: #000;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- 로고 -->
+        <a href="#" class="logo">LOGO</a>
+
+        <!-- 중앙 네비게이션 -->
+        <nav>
+            <a href="#">회사소개</a>
+            <a href="#">제품소개</a>
+            <a href="#">문의 게시판</a>
+        </nav>
+
+        <!-- 우측 유틸 -->
+        <div class="util">
+            <div class="lang">
+                <a href="#" class="active">KR</a>
+                <span class="lang-divider">|</span>
+                <a href="#">EN</a>
+            </div>
+            <button class="search-btn" aria-label="검색">
+                <svg viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="7"/>
+                    <line x1="16.5" y1="16.5" x2="22" y2="22"/>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회사 가이드</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header" id="site-header">
+        <div class="site-header__inner">
+            <a href="index.html" class="logo">LOGO</a>
+            <nav class="site-header__nav" id="primary-nav" aria-label="주 메뉴">
+                <ul>
+                    <li><a href="sub01.html">회사 소개</a></li>
+                    <li><a href="sub02.html" aria-current="page">회사 가이드</a></li>
+                    <li><a href="sub03.html">지원 센터</a></li>
+                </ul>
+            </nav>
+            <div class="site-header__trailing">
+                <div class="site-header__actions">
+                    <a href="#" class="btn-pill">로그인</a>
+                    <button type="button" class="btn-pill" aria-haspopup="listbox" aria-expanded="false">
+                        KR<span class="caret" aria-hidden="true">▼</span>
+                    </button>
+                </div>
+                <button type="button" class="menu-toggle" id="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="메뉴 열기">
+                    <span class="menu-toggle__bars" aria-hidden="true">
+                        <span class="menu-toggle__bar"></span>
+                        <span class="menu-toggle__bar"></span>
+                        <span class="menu-toggle__bar"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+        <div class="drawer-overlay" id="drawer-overlay" aria-hidden="true"></div>
+    </header>
+    <main>
+        <div class="main-content main-content--guide">
+            <div class="main-content__text">
+                <h1 class="main-content__title">회사 가이드 — 업무·보안·협업 한눈에</h1>
+                <p class="main-content__desc">
+                    신규 입사자 온보딩부터 보안·윤리, 협업 도구 사용법까지<br>
+                    최신 정책을 문서와 체크리스트로 정리해 두었습니다.
+                </p>
+                <p class="main-content__period">문서 개정 2026. 03. 15 (KST)</p>
+                <div class="main-content__stats" role="group" aria-label="가이드 요약">
+                    <span class="main-content__stat">
+                        <span class="main-content__coin main-content__coin--doc" aria-hidden="true">문</span>
+                        <span class="main-content__stat-label">가이드 24편</span>
+                    </span>
+                    <span class="main-content__stat-divider" aria-hidden="true"></span>
+                    <span class="main-content__stat">
+                        <span class="main-content__avatar" aria-hidden="true"></span>
+                        <span class="main-content__stat-label">체크리스트 8개</span>
+                    </span>
+                </div>
+                <a href="#" class="main-content__cta">전체 가이드 보기</a>
+            </div>
+            <div class="main-content__visual" aria-hidden="true">
+                <img
+                    class="main-content__image"
+                    src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+                    srcset="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&amp;fit=crop&amp;w=800&amp;q=80 800w,
+                            https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&amp;fit=crop&amp;w=1200&amp;q=80 1200w"
+                    sizes="(min-width: 900px) 50vw, 100vw"
+                    width="1200"
+                    height="800"
+                    alt=""
+                    loading="lazy"
+                    decoding="async">
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+</html>

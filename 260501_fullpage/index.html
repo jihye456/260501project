@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="header-logo">
+        <a href="#company">
+            <svg viewBox="0 0 270 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M0 10 L0 90 L30 90 L30 60 L60 90 L100 90 L60 50 L95 10 L57 10 L30 42 L30 10 Z"/>
+                <rect x="115" y="10" width="30" height="80"/>
+                <path d="M165 10 L140 90 L170 90 L180 55 L190 90 L220 90 L195 10 Z"/>
+            </svg>
+        </a>
+    </div>
+
+    <nav class="header-nav" id="header-menu">
+        <a data-menuanchor="company" href="#company">회사소개</a>
+        <a data-menuanchor="product" href="#product">제품소개</a>
+        <a data-menuanchor="online" href="#online">온라인</a>
+        <a data-menuanchor="community" href="#community">커뮤니티</a>
+    </nav>
+
+    <div class="header-utils">
+        <div class="lang-wrap">
+            <a href="#" class="inactive">KR</a>
+            <span class="lang-divider" aria-hidden="true"></span>
+            <a href="#" class="active">EN</a>
+        </div>
+        <button type="button" class="search-btn" aria-label="검색">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="10.5" cy="10.5" r="6.5"/>
+                <line x1="15.5" y1="15.5" x2="22" y2="22"/>
+            </svg>
+        </button>
+    </div>
+</header>
+
+<main id="fullpage">
+    <section class="section section--bg fp-animate" style="--section-bg: url('https://images.unsplash.com/photo-1501785888041-af3ef285e470?auto=format&amp;fit=crop&amp;w=1920&amp;q=80');" data-anchor="company">
+        <div class="section__inner section__inner--anim">
+            <h2 class="section__title">회사소개</h2>
+            <p class="section__desc">브랜드와 비전을 한 화면에 담습니다.</p>
+        </div>
+    </section>
+    <section class="section section--bg" style="--section-bg: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&amp;fit=crop&amp;w=1920&amp;q=80');" data-anchor="product">
+        <div class="section__inner section__inner--anim section__inner--scale">
+            <h2 class="section__title">제품소개</h2>
+            <p class="section__desc">라인업과 핵심 가치를 소개합니다.</p>
+        </div>
+    </section>
+    <section class="section section--bg" style="--section-bg: url('https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&amp;fit=crop&amp;w=1920&amp;q=80');" data-anchor="online">
+        <div class="section__inner section__inner--anim section__inner--slide">
+            <h2 class="section__title">온라인</h2>
+            <p class="section__desc">디지털 서비스와 쇼룸을 연결합니다.</p>
+        </div>
+    </section>
+    <section class="section section--bg" style="--section-bg: url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&amp;fit=crop&amp;w=1920&amp;q=80');" data-anchor="community">
+        <div class="section__inner section__inner--anim section__inner--blur">
+            <h2 class="section__title">커뮤니티</h2>
+            <p class="section__desc">고객과 함께하는 이야기를 모읍니다.</p>
+        </div>
+    </section>
+
+    <section class="section fp-auto-height section--footer" data-anchor="footer">
+        <footer class="site-footer site-footer--anim">
+            <div class="site-footer__main">
+                <div class="site-footer__grid">
+                    <div class="site-footer__brand">
+                        <a href="#company" class="site-footer__logo">
+                            <span class="site-footer__logo-mark" aria-hidden="true"></span>
+                            <span class="site-footer__logo-text">HOMEPAGE KOREA</span>
+                        </a>
+                        <ul class="site-footer__social" aria-label="소셜 미디어">
+                            <li><a href="#">K</a></li>
+                            <li><a href="#">I</a></li>
+                            <li><a href="#">Y</a></li>
+                            <li><a href="#">B</a></li>
+                            <li><a href="#">H</a></li>
+                        </ul>
+                        <dl class="site-footer__contact">
+                            <div><dt>대표</dt><dd>홍길동</dd></div>
+                            <div><dt>전화</dt><dd><a href="tel:01000000000">010-0000-0000</a></dd></div>
+                            <div><dt>주소</dt><dd>서울특별시 ○○구 ○○로 00</dd></div>
+                            <div><dt>이메일</dt><dd><a href="mailto:hello@example.com">hello@example.com</a></dd></div>
+                        </dl>
+                    </div>
+
+                    <nav class="site-footer__col" aria-labelledby="footer-nav-about">
+                        <h2 class="site-footer__heading" id="footer-nav-about">회사소개</h2>
+                        <ul class="site-footer__links">
+                            <li><a href="#">인사말</a></li>
+                            <li><a href="#">연혁</a></li>
+                            <li><a href="#">오시는 길</a></li>
+                        </ul>
+                    </nav>
+
+                    <nav class="site-footer__col" aria-labelledby="footer-nav-product">
+                        <h2 class="site-footer__heading" id="footer-nav-product">제품소개</h2>
+                        <ul class="site-footer__links">
+                            <li><a href="#">제품 전체</a></li>
+                            <li><a href="#">베스트</a></li>
+                            <li><a href="#">신제품</a></li>
+                        </ul>
+                    </nav>
+
+                    <nav class="site-footer__col" aria-labelledby="footer-nav-inquiry">
+                        <h2 class="site-footer__heading" id="footer-nav-inquiry">온라인문의</h2>
+                        <ul class="site-footer__links">
+                            <li><a href="#">문의하기</a></li>
+                            <li><a href="#">자주 묻는 질문</a></li>
+                            <li><a href="#">견적 요청</a></li>
+                        </ul>
+                    </nav>
+
+                    <nav class="site-footer__col" aria-labelledby="footer-nav-board">
+                        <h2 class="site-footer__heading" id="footer-nav-board">게시판 작성</h2>
+                        <ul class="site-footer__links">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">자료실</a></li>
+                            <li><a href="#">후기</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="site-footer__bar">
+                <p class="site-footer__copy">© 2026 HOMEPAGEKOREA. ALL RIGHTS RESERVED.</p>
+                <button type="button" class="site-footer__top" id="footer-top-btn">TOP</button>
+            </div>
+        </footer>
+    </section>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/fullpages.js"></script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header" id="site-header">
+        <div class="site-header__inner">
+            <a href="index.html" class="logo">LOGO</a>
+            <nav class="site-header__nav" id="primary-nav" aria-label="주 메뉴">
+                <ul>
+                    <li><a href="sub01.html">회사 소개</a></li>
+                    <li><a href="sub02.html">회사 가이드</a></li>
+                    <li><a href="sub03.html">지원 센터</a></li>
+                </ul>
+            </nav>
+            <div class="site-header__trailing">
+                <div class="site-header__actions">
+                    <a href="login.html" class="btn-pill">로그인</a>
+                </div>
+                <button type="button" class="menu-toggle" id="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="메뉴 열기">
+                    <span class="menu-toggle__bars" aria-hidden="true">
+                        <span class="menu-toggle__bar"></span>
+                        <span class="menu-toggle__bar"></span>
+                        <span class="menu-toggle__bar"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+        <div class="drawer-overlay" id="drawer-overlay" aria-hidden="true"></div>
+    </header><!-- 메뉴 -->
+    <main>
+        <section class="hero">
+            <div class="hero__content">
+                <p class="hero__eyebrow">당신의 이야기로 채워주세요!</p>
+                <h1>청년 소통의 시작,<br>상상을 채우는 공간</h1>
+                <a href="#" class="hero__cta">함께하기 <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="hero__image-wrap" aria-hidden="true">
+                <img
+                    class="hero__image"
+                    src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1600&q=80"
+                    alt=""
+                >
+            </div>
+        </section>
+
+        <section class="benefits-strip" aria-labelledby="participation-benefits-title">
+            <div class="benefits-strip__inner">
+                <header class="benefits-strip__banner">
+                    <h2 id="participation-benefits-title" class="benefits-strip__title">참여 혜택</h2>
+                </header>
+                <div class="benefits-strip__board">
+                    <ul class="benefits-grid">
+                        <li>
+                            <a href="#" class="benefit-card">
+                                <div class="benefit-card__visual">
+                                    <img
+                                        src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=640&q=80"
+                                        alt=""
+                                        width="320"
+                                        height="200"
+                                        loading="lazy"
+                                    >
+                                </div>
+                                <div class="benefit-card__body">
+                                    <span class="benefit-card__cat">카드혜택</span>
+                                    <p class="benefit-card__title">제휴 카드로 결제 시 추가 적립과 할인을 받아보세요.</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="benefit-card">
+                                <div class="benefit-card__visual">
+                                    <img
+                                        src="https://images.unsplash.com/photo-1607083206869-4c7622c38bdb?auto=format&fit=crop&w=640&q=80"
+                                        alt=""
+                                        width="320"
+                                        height="200"
+                                        loading="lazy"
+                                    >
+                                </div>
+                                <div class="benefit-card__body">
+                                    <span class="benefit-card__cat">할인혜택</span>
+                                    <p class="benefit-card__title">기간 한정 프로모션과 단계별 할인 혜택을 확인하세요.</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="benefit-card">
+                                <div class="benefit-card__visual">
+                                    <img
+                                        src="https://images.unsplash.com/photo-1556656793-08538906a9f8?auto=format&fit=crop&w=640&q=80"
+                                        alt=""
+                                        width="320"
+                                        height="200"
+                                        loading="lazy"
+                                    >
+                                </div>
+                                <div class="benefit-card__body">
+                                    <span class="benefit-card__cat">통신사혜택</span>
+                                    <p class="benefit-card__title">이동통신사 멤버십·요금제 연동 특전을 이용할 수 있습니다.</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="benefit-card">
+                                <div class="benefit-card__visual">
+                                    <img
+                                        src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=640&q=80"
+                                        alt=""
+                                        width="320"
+                                        height="200"
+                                        loading="lazy"
+                                    >
+                                </div>
+                                <div class="benefit-card__body">
+                                    <span class="benefit-card__cat">지역혜택</span>
+                                    <p class="benefit-card__title">거주 지역·매장별 로컬 이벤트와 제휴 혜택을 모았습니다.</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="activities-strip" aria-labelledby="activities-title">
+            <div class="activities-strip__inner">
+                <h2 id="activities-title" class="activities-strip__title">참여 활동</h2>
+                <div class="activity-carousel" id="activity-carousel">
+                    <button type="button" class="activity-carousel__arrow activity-carousel__arrow--prev" aria-label="이전 슬라이드">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+                    </button>
+                    <div class="activity-carousel__viewport">
+                        <div class="activity-carousel__track">
+                            <article class="activity-card is-active">
+                                <a href="#" class="activity-card__link">
+                                    <div class="activity-card__thumb">
+                                        <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=80" alt="" width="400" height="225" loading="lazy">
+                                        <h3 class="activity-card__title">공간 대여 이용</h3>
+                                    </div>
+                                </a>
+                            </article>
+                            <article class="activity-card">
+                                <a href="#" class="activity-card__link">
+                                    <div class="activity-card__thumb">
+                                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80" alt="" width="400" height="225" loading="lazy">
+                                        <h3 class="activity-card__title">워크샵 및 세미나 개최</h3>
+                                    </div>
+                                </a>
+                            </article>
+                            <article class="activity-card">
+                                <a href="#" class="activity-card__link">
+                                    <div class="activity-card__thumb">
+                                        <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=800&q=80" alt="" width="400" height="225" loading="lazy">
+                                        <h3 class="activity-card__title">원데이 클래스</h3>
+                                    </div>
+                                </a>
+                            </article>
+                            <article class="activity-card">
+                                <a href="#" class="activity-card__link">
+                                    <div class="activity-card__thumb">
+                                        <img src="https://images.unsplash.com/photo-1571008887539-bdb0f7756aec?auto=format&fit=crop&w=800&q=80" alt="" width="400" height="225" loading="lazy">
+                                        <h3 class="activity-card__title">모닝 러닝 크루 챌린지</h3>
+                                    </div>
+                                </a>
+                            </article>
+                            <article class="activity-card">
+                                <a href="#" class="activity-card__link">
+                                    <div class="activity-card__thumb">
+                                        <img src="https://images.unsplash.com/photo-1593113598332-c288d5d28e8f?auto=format&fit=crop&w=800&q=80" alt="" width="400" height="225" loading="lazy">
+                                        <h3 class="activity-card__title">단체 봉사활동</h3>
+                                    </div>
+                                </a>
+                            </article>
+                            <article class="activity-card">
+                                <a href="#" class="activity-card__link">
+                                    <div class="activity-card__thumb">
+                                        <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=80" alt="" width="400" height="225" loading="lazy">
+                                        <h3 class="activity-card__title">국내 여행 패키지</h3>
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+                    <button type="button" class="activity-carousel__arrow activity-carousel__arrow--next" aria-label="다음 슬라이드">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+                    </button>
+                    <div class="activity-carousel__dots" role="tablist" aria-label="참여 활동 슬라이드">
+                        <button type="button" class="activity-carousel__dot is-active" role="tab" aria-selected="true" aria-label="1번 슬라이드"></button>
+                        <button type="button" class="activity-carousel__dot" role="tab" aria-selected="false" aria-label="2번 슬라이드" tabindex="-1"></button>
+                        <button type="button" class="activity-carousel__dot" role="tab" aria-selected="false" aria-label="3번 슬라이드" tabindex="-1"></button>
+                        <button type="button" class="activity-carousel__dot" role="tab" aria-selected="false" aria-label="4번 슬라이드" tabindex="-1"></button>
+                        <button type="button" class="activity-carousel__dot" role="tab" aria-selected="false" aria-label="5번 슬라이드" tabindex="-1"></button>
+                        <button type="button" class="activity-carousel__dot" role="tab" aria-selected="false" aria-label="6번 슬라이드" tabindex="-1"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main> 
+    <footer class="site-footer site-footer--dark">
+        <div class="site-footer__shell">
+            <p class="site-footer__logo" lang="en">LOGO</p>
+            <div class="site-footer__row">
+                <a class="site-footer__link" href="#" target="_blank" rel="noopener noreferrer">
+                    쿠키런 크리에이터 패밀리 운영 정책
+                    <span class="site-footer__ext" aria-hidden="true">
+                        <svg width="10" height="10" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 10L10 2M10 2H4M10 2V8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </span>
+                </a>
+                <a class="site-footer__link" href="#" target="_blank" rel="noopener noreferrer">
+                    개인정보 처리방침
+                    <span class="site-footer__ext" aria-hidden="true">
+                        <svg width="10" height="10" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 10L10 2M10 2H4M10 2V8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </span>
+                </a>
+                <a class="site-footer__link" href="#" target="_blank" rel="noopener noreferrer">
+                    이용약관 및 규정
+                    <span class="site-footer__ext" aria-hidden="true">
+                        <svg width="10" height="10" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 10L10 2M10 2H4M10 2V8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </span>
+                </a>
+                <span class="site-footer__address">(08503) 서울 금천구 가산동 459-14</span>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
