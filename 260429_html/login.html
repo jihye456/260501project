@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevPlay 계정연동</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-page">
+    <main class="login-main">
+        <div class="login-card">
+            <h1 class="login-title">로그인</h1>
+            <hr class="login-divider" aria-hidden="true">
+
+            <form class="login-form" action="#" method="post">
+                <label class="visually-hidden" for="login-email">이메일</label>
+                <input
+                    class="login-input"
+                    type="email"
+                    id="login-email"
+                    name="email"
+                    autocomplete="email"
+                    placeholder="이메일 입력"
+                    required
+                >
+
+                <div class="login-field login-field--password">
+                    <label class="visually-hidden" for="login-password">비밀번호</label>
+                    <input
+                        class="login-input login-input--with-toggle"
+                        type="password"
+                        id="login-password"
+                        name="password"
+                        autocomplete="current-password"
+                        placeholder="비밀번호 입력"
+                        required
+                    >
+                    <button
+                        type="button"
+                        class="login-password-toggle"
+                        id="login-password-toggle"
+                        aria-label="비밀번호 표시"
+                        aria-pressed="false"
+                    >
+                    </button>
+                </div>
+
+                <button type="submit" class="login-submit">
+                    <svg class="login-submit__icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path fill="currentColor" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                    <span>이메일로 로그인</span>
+                </button>
+            </form>
+
+            <a href="#" class="login-signup">가입하기</a>
+        </div>
+    </main>
+
+    <script>
+    (function () {
+      var input = document.getElementById("login-password");
+      var btn = document.getElementById("login-password-toggle");
+      if (!input || !btn) return;
+
+      var iconHidden = btn.querySelector(".login-password-toggle__icon--hidden");
+      var iconVisible = btn.querySelector(".login-password-toggle__icon--visible");
+
+      btn.addEventListener("click", function () {
+        var show = input.type === "password";
+        input.type = show ? "text" : "password";
+        btn.setAttribute("aria-pressed", String(show));
+        btn.setAttribute("aria-label", show ? "비밀번호 숨기기" : "비밀번호 표시");
+        if (iconHidden && iconVisible) {
+          iconHidden.hidden = show;
+          iconVisible.hidden = !show;
+        }
+      });
+    })();
+    </script>
+</body>
+</html>
